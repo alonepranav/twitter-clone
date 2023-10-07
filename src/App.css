@@ -1,0 +1,19 @@
+.up {
+    transform: rotate(180deg);
+    color: rgb(0, 183, 255);
+}
+
+.display-toggle {
+    display: none;
+}
+
+
+.hover-underline:hover {
+    text-decoration: underline 1.5px solid black;
+}
+
+.onblurClass {
+    padding: 0.4rem;
+    background: #fff;
+    border: 1.5px solid rgb(0, 174, 255);
+}

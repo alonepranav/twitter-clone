@@ -1,0 +1,30 @@
+[
+      {
+            "tweet": "The new Song",
+            "type": "video",
+            "play": false,
+            "path": "/posts/video1.mp4"
+      },
+      {
+            "tweet": "My Twitter profile photo is here, I is since I've created my twitter account",
+            "type": "photo",
+            "path": "/posts/profile.jpg"
+      },
+      {
+            "tweet": "The another new Song",
+            "type": "video",
+            "play": false,
+            "path": "/posts/video2.mp4"
+      },
+      {
+            "tweet": "ONe of the photo I've got in my laptop downloads 😋😎👻🙂😃🥰",
+            "type": "photo",
+            "path": "/posts/photo2.png"
+      },
+      {
+            "tweet": "The another new Song, This is tweet",
+            "type": "video",
+            "play": false,
+            "path": "/posts/video3.mp4"
+      }
+]
