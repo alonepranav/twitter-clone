@@ -1,6 +1,9 @@
 import React from "react";
+import useTitle from "../hooks/UseTitleHook";
 
 export default function Not_Found() {
+  useTitle("Page not fount");
+
   return (
     <>
       <div className="h-screen w-full">
