@@ -4,9 +4,8 @@ import InnerLeftSide from "./InnerLeftSide";
 import { BiPlus, BiSearch } from "react-icons/bi";
 import { LuArrowLeft } from "react-icons/lu";
 import ToFollowSection from "./ToFollowSection";
-import WhatHappeningSection from "./WhatHappeningSection";
 import { MdClose } from "react-icons/md";
-
+import WhatHappeningSection from "./WhatHappeningSection";
 import useTitle from "../hooks/UseTitleHook";
 
 export default function Lists() {

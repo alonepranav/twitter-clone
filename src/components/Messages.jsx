@@ -6,9 +6,9 @@ import MessageBox from "./MessageBox";
 import useTitle from "../hooks/UseTitleHook";
 
 export default function Messages() {
-  const [message, setMessage] = useState(false);
-
   useTitle("Messages");
+
+  const [message, setMessage] = useState(false);
 
   return (
     <>

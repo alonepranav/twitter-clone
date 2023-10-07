@@ -14,35 +14,65 @@ import NotificationsMentions from "./components/NotificationsMentions";
 import NotificationsVerified from "./components/NotificationsVerified";
 import InnerSecondLayout from "./components/InnerSecondLayout";
 import Messages from "./components/Messages";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1100);
+
+    localStorage.clear();
+  }, []);
+
   return (
     <>
-      <div className="min-h-screen w-screen px-[9.2rem]">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<CommonLayout />}>
-              <Route element={<InnerFirstLayout />}>
-                <Route path="/" element={<Home />} />
-                <Route path="/explore" element={<Explore />} />
-                <Route path="/communities" element={<Communities />} />
-                <Route path="/notifications/*" element={<Notifications />}>
-                  <Route index element={<NotificationsHome />} />
-                  <Route path="verified" element={<NotificationsVerified />} />
-                  <Route path="mentions" element={<NotificationsMentions />} />
-                </Route>
-                <Route path="/lists" element={<Lists />} />
-                <Route path="/profile" element={<Profile />} />
-                <Route path="*" element={<Not_Found />} />
-              </Route>
+      {loading ? (
+        <>
+          <div className="h-screen w-screen flex justify-center items-center fixed top-0 left-0">
+            <img src="/x.png" className="h-16 w-16" />
+          </div>
+        </>
+      ) : (
+        <div className="min-h-screen w-screen px-[9.2rem]">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
 
-              <Route element={<InnerSecondLayout />}>
-                <Route path="/messages" element={<Messages />} />
+              <Route path="/" element={<CommonLayout />}>
+                <Route element={<InnerFirstLayout />}>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/explore" element={<Explore />} />
+                  <Route path="/communities" element={<Communities />} />
+                  <Route path="/notifications/*" element={<Notifications />}>
+                    <Route index element={<NotificationsHome />} />
+                    <Route
+                      path="verified"
+                      element={<NotificationsVerified />}
+                    />
+                    <Route
+                      path="mentions"
+                      element={<NotificationsMentions />}
+                    />
+                  </Route>
+                  <Route path="/lists" element={<Lists />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route path="*" element={<Not_Found />} />
+                </Route>
+
+                <Route element={<InnerSecondLayout />}>
+                  <Route path="/messages" element={<Messages />} />
+                </Route>
               </Route>
-            </Route>
-          </Routes>
-        </BrowserRouter>
-      </div>
+            </Routes>
+          </BrowserRouter>
+        </div>
+      )}
     </>
   );
 }

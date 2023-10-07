@@ -4,7 +4,6 @@ import InnerLeftSide from "./InnerLeftSide";
 import { BiSearch } from "react-icons/bi";
 import { LuSettings } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
-import PhotoPost from "./PhotoPost";
 import ToFollowSection from "./ToFollowSection";
 import useTitle from "../hooks/UseTitleHook";
 import HomePostComponent from "./HomePostComponent";
@@ -80,10 +79,10 @@ export default function Explore() {
 
                 <div className="mt-1.5">
                   <div className="flex justify-evenly border-b">
-                    <p className="relative font-semibold hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
+                    <div className="relative font-semibold hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
                       For you
                       <div className="absolute h-1 w-16 bg-blue-500 bottom-0 rounded"></div>
-                    </p>
+                    </div>
 
                     <p className="hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
                       Trending
@@ -101,10 +100,6 @@ export default function Explore() {
                 </div>
               </div>
               <hr />
-              {/* <PhotoPost />
-              <PhotoPost />
-              <PhotoPost />
-              <PhotoPost /> */}
               <HomePostComponent />
             </>
           }

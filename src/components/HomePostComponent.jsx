@@ -10,15 +10,11 @@ export default function HomePostComponent() {
     <>
       {post.map((a, i) => {
         return a.type === "video" ? (
-          <VideoPost key={i} {...{ ...a, i, post,setPost }} />
+          <VideoPost key={i} {...{ ...a, i, post, setPost }} />
         ) : (
           <PhotoPost key={i} {...{ ...a, i }} />
         );
       })}
-
-      {/* {[..."1234".split("")].map((a, i) => {
-        return <VideoPost key={i} i={i} />;
-      })} */}
     </>
   );
 }

@@ -167,10 +167,10 @@ export default function Profile() {
 
               <div className="mt-7">
                 <div className="flex justify-evenly border-b">
-                  <p className="relative font-semibold hover:bg-slate-200 py-3 w-full flex justify-center items-center transition-all">
+                  <div className="relative font-semibold hover:bg-slate-200 py-3 w-full flex justify-center items-center transition-all">
                     Posts
                     <div className="absolute h-1 w-16 bg-blue-500 bottom-0 rounded"></div>
-                  </p>
+                  </div>
                   <p className="hover:bg-slate-200 py-3 w-full flex justify-center items-center transition-all">
                     Replies
                   </p>

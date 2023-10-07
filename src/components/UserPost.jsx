@@ -99,8 +99,7 @@ export default function UserPost({ tab, setTab }) {
                     >
                       <div className="flex gap-4 justify-start items-center">
                         <p className="bg-green-600 px-3 py-2.5 rounded-full text-white">
-                          <i class="bi bi-person-heart"></i>
-                          {/* <IoIosArrowDown className="text-xl" /> */}
+                          <i className="bi bi-person-heart"></i>
                         </p>
                         <div className="font-semibold text-base">
                           <p>Circle</p>

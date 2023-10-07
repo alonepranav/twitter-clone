@@ -10,9 +10,9 @@ import { MdClose } from "react-icons/md";
 import useTitle from "../hooks/UseTitleHook";
 
 export default function Notifications() {
-  const l = useLocation();
-
   useTitle("Notifications");
+  
+  const l = useLocation();
 
   return (
     <>

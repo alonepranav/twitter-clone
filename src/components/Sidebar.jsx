@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink, useLocation, useSearchParams } from "react-router-dom";
 import {
   RiFileListFill,
@@ -169,7 +169,6 @@ export default function Sidebar() {
               <NavLink
                 to={"?tab=premium"}
                 className={`w-fit flex justify-start items-center gap-5 py-[.64rem] pl-3 pr-7 transition-all rounded-full hover:bg-stone-200`}
-                // style={navLinkStyle}
               >
                 <div>
                   <RiTwitterXLine className="text-2xl" />
@@ -194,7 +193,6 @@ export default function Sidebar() {
                 // to={"/more"}
                 className={`w-fit flex justify-start items-center gap-5 py-[.64rem] pl-3 pr-7 transition-all rounded-full hover:bg-stone-200 cursor-pointer relative`}
                 onClick={() => setMore(true)}
-                // style={navLinkStyle}
               >
                 {!more || <More {...{ more, setMore }} />}
 

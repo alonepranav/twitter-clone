@@ -13,47 +13,47 @@ export default function PhotoPost({ tweet, path }) {
         <img src="/profile.jpg" className="h-12 rounded-full" alt="" />
         <div>
           <div className="text-slate-500 flex justify-between items-center ">
-            <p>
+            <div>
               <span className="font-bold text-black">
                 Pranav Shilavane{" "}
                 <MdVerified className="text-sky-500 text-xl inline-block" />{" "}
               </span>
               @PranavShilavane . 3h
-            </p>
-            <p className="rounded-full hover:bg-sky-200 p-2">
+            </div>
+            <div className="rounded-full hover:bg-sky-200 p-2">
               <HiDotsHorizontal />
-            </p>
+            </div>
           </div>
-          <p className="text-sm mt-1">{tweet}</p>
-          <img src={path} al className="rounded-2xl h-[500px] w-full mt-3" />
+          <div className="text-sm mt-1">{tweet}</div>
+          <img src={path} className="rounded-2xl h-[500px] w-full mt-3" />
           <div className="flex justify-start pl-0 pt-5">
-            <p className="p-2 hover:text-sky-400 flex justify-start items-center gap-1 mr-5">
-              <p className="p-2 hover:bg-sky-200 rounded-full">
+            <div className="p-2 hover:text-sky-400 flex justify-start items-center gap-1 mr-5">
+              <div className="p-2 hover:bg-sky-200 rounded-full">
                 <TbMessageCircle className="" />
-              </p>
-              <p>173</p>
-            </p>
-            <p className="p-2 hover:text-emerald-500 rounded-full flex justify-start items-center gap-2 mr-9">
-              <p className="p-2 hover:bg-green-200 rounded-full">
+              </div>
+              <div>173</div>
+            </div>
+            <div className="p-2 hover:text-emerald-500 rounded-full flex justify-start items-center gap-2 mr-9">
+              <div className="p-2 hover:bg-green-200 rounded-full">
                 <BiRepost className="" />
-              </p>
-              <p>10k</p>
-            </p>
-            <p className="p-2 hover:text-rose-500 rounded-full flex justify-start items-center gap-2 mr-5">
-              <p className="p-2 hover:bg-rose-200 rounded-full">
+              </div>
+              <div>10k</div>
+            </div>
+            <div className="p-2 hover:text-rose-500 rounded-full flex justify-start items-center gap-2 mr-5">
+              <div className="p-2 hover:bg-rose-200 rounded-full">
                 <AiOutlineHeart className="" />
-              </p>
-              <p>100k</p>
-            </p>
-            <p className="p-2 hover:text-sky-400 rounded-full flex justify-start items-center gap-2 mr-5">
-              <p className="p-2 hover:bg-sky-200 rounded-full">
+              </div>
+              <div>100k</div>
+            </div>
+            <div className="p-2 hover:text-sky-400 rounded-full flex justify-start items-center gap-2 mr-5">
+              <div className="p-2 hover:bg-sky-200 rounded-full">
                 <TbBrandGoogleAnalytics className="" />
-              </p>
-              <p>111M</p>
-            </p>
-            <p className="p-1 px-4 hover:bg-slate-200 rounded-full flex justify-start items-center gap-2">
+              </div>
+              <div>111M</div>
+            </div>
+            <div className="p-1 px-4 hover:bg-slate-200 rounded-full flex justify-start items-center gap-2">
               <FiUpload className="text-sm" />
-            </p>
+            </div>
           </div>
         </div>
       </div>

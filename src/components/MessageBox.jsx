@@ -25,7 +25,10 @@ export default function MessageBox({ message, setMessage }) {
         <div className="bg-white py-3 rounded-2xl w-[600px] h-[650px]">
           <div className="flex justify-between items-center px-4">
             <div className="flex gap-10 items-center">
-              <p className="p-2  hover:bg-slate-200 rounded-full" onClick={()=>setMessage(false)} >
+              <p
+                className="p-2  hover:bg-slate-200 rounded-full"
+                onClick={() => setMessage(false)}
+              >
                 <CgClose className="text-xl" />
               </p>
               <p className="text-xl font-bold">New message</p>

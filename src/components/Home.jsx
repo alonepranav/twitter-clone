@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InnerRightSide from "./InnerRightSide";
 import InnerLeftSide from "./InnerLeftSide";
-import { BiPlus, BiSearch, BiSmile } from "react-icons/bi";
+import { BiSearch, BiSmile } from "react-icons/bi";
 import { GrLocation, GrSchedulePlay } from "react-icons/gr";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { MdClose, MdOutlineGifBox } from "react-icons/md";
@@ -9,10 +9,20 @@ import { GoFileMedia } from "react-icons/go";
 import ToFollowSection from "./ToFollowSection";
 import SubscribeToPremium from "./SubscribeToPremium";
 import WhatHappeningSection from "./WhatHappeningSection";
-import VideoPost from "./VideoPost";
 import HomePostComponent from "./HomePostComponent";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const login = localStorage.getItem("twitter");
+
+    if (login === null) {
+      navigate("/login");
+    }
+  }, []);
+
   return (
     <>
       <div className="w-full  h-full flex">
@@ -24,10 +34,10 @@ export default function Home() {
 
                 <div className="mt-">
                   <div className="flex justify-evenly border-b">
-                    <p className="relative font-semibold hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
+                    <div className="relative font-semibold hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
                       For you
                       <div className="absolute h-1 w-16 bg-blue-500 bottom-0 rounded"></div>
-                    </p>
+                    </div>
 
                     <p className="hover:bg-[rgba(0,0,0,0.1)] py-3 w-full flex justify-center items-center transition-all">
                       Following
@@ -69,18 +79,7 @@ export default function Home() {
                 </div>
               </div>
               <hr />
-
-              {/* <PhotoPost /> */}
-
-              {/* {[..."123".split("")].map((a, i) => {
-                return <VideoPost key={i} i={i} />;
-              })} */}
-
               <HomePostComponent />
-
-              {/* {[..."askjnasjcnjkascnacna".split("")].map((a,i) => (
-                <PhotoPost key={i} />
-              ))} */}
             </>
           }
         </InnerLeftSide>
