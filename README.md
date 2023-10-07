@@ -6,7 +6,7 @@
 
 ### I've also added the login and sigin functionality. You dont need to add email, password or username you have to just click login or signin to get in.
 
-## Live Project : <a href="https://twiter-pranav.vercel.app" target="_blank">twitter-pranav.vercel.app</a>
+## Live Project : <a href="https://twitter-pranav.vercel.app" target="_blank">twitter-pranav.vercel.app</a>
 
 ## Started : 3/10/23 -> Tuesday
 
